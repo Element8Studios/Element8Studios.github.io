@@ -109,6 +109,35 @@
 
   // OTHER
 
+  $('.vimeo-video-rod').magnificPopup({
+          items: [
+            {
+              src: 'https://player.vimeo.com/video/742065435',
+              type: 'iframe' // this overrides default type
+            }],
+            gallery: {
+              enabled: false
+            },
+          type: 'image'
+        });
+
+        //MORE VIMEO VIDEO
+    $('.vimeo-video-more').magnificPopup({
+          items: [
+            {
+              src: 'https://player.vimeo.com/video/118901221',
+              type: 'iframe' // this overrides default type
+            },
+            {
+                src: 'https://player.vimeo.com/video/211690338',
+                type: 'iframe' // this overrides default type
+            },],
+            gallery: {
+              enabled: true
+            },
+          type: 'image'
+        });
+
 
 
 
