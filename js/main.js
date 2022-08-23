@@ -113,7 +113,7 @@
       $('.vimeo-video-rod').magnificPopup({
         // main options
         alignTop: false,
-        mainClass: 'mfp-fade',
+        mainClass: 'mfp-fade vimeo-popup-custom',
         callbacks: {
           open: function() {
             var iframe = jQuery('.mfp-content iframe');

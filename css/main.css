@@ -1210,3 +1210,12 @@ html{
   }
   4%, 100% {  text-shadow: none; transform: none; }
 }
+
+/*/////////////////////////////////////// VIMEO POPUP FORMATTING //*/
+
+.mfp-wrap.vimeo-popup-custom .mfp-content {
+    height: 1080px;
+    max-height: 90vh;
+    width: 1920px;
+    max-width: 90vw;
+}
