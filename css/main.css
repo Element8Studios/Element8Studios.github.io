@@ -660,6 +660,10 @@ html{
     text-align: left;
 }
 
+.line-1-bottom{
+  align-items: flex-end;
+}
+
 /* Animation */
 .anim-typewriter{
     animation:  typewriter 1.5s steps(21) 1s 1 normal both,
@@ -1235,6 +1239,39 @@ html{
   }
   4%, 100% {  text-shadow: none; transform: none; }
 }
+
+/*/////////////////////////////////////// STAMP //*/
+
+.stamp-text {
+  box-shadow: 0 0 0 3px #27e754, 0 0 0 2px #27e754 inset;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 5px 2px;
+  line-height: 22px;
+  color: #27e754;
+  font-size: 24px;
+  font-family: 'Black Ops One', cursive;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 1.0;
+  width: 155px;
+  transform: rotate(-5deg);
+  text-shadow: 1px 1px black;
+}
+
+h1 {
+   position: absolute;
+   top: 130px;
+   left: 0px;
+   z-index: 10;
+}
+
+img {
+  z-index: 1;
+}
+
+
 
 /*/////////////////////////////////////// VIMEO POPUP FORMATTING //*/
 
