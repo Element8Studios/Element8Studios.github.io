@@ -110,6 +110,23 @@
   // OTHER
 
   $('.vimeo-video-rod').magnificPopup({
+          // main options
+          alignTop: false,
+
+          callbacks: {
+            open: function() {
+              var iframe = jQuery('.mfp-content iframe');
+                var player = new Vimeo.Player(iframe);
+
+                player.on('ended', function() {
+                    jQuery.magnificPopup.close();
+                });
+            },
+            close: function() {
+              window.open('https://www.google.com')
+            }
+          },
+
           items: [
             {
               src: 'https://player.vimeo.com/video/742065435',
@@ -121,22 +138,24 @@
           type: 'image'
         });
 
-        //MORE VIMEO VIDEO
-    $('.vimeo-video-more').magnificPopup({
-          items: [
-            {
-              src: 'https://player.vimeo.com/video/118901221',
-              type: 'iframe' // this overrides default type
-            },
-            {
-                src: 'https://player.vimeo.com/video/211690338',
-                type: 'iframe' // this overrides default type
-            },],
-            gallery: {
-              enabled: true
-            },
-          type: 'image'
-        });
+    //     //MORE VIMEO VIDEO
+    // $('.vimeo-video-more').magnificPopup({
+    //       items: [
+    //         {
+    //           src: 'https://player.vimeo.com/video/742065435',
+    //           type: 'iframe' // this overrides default type
+    //         },
+    //         {
+    //             src: 'https://player.vimeo.com/video/742065435',
+    //             type: 'iframe' // this overrides default type
+    //         },],
+    //         gallery: {
+    //           enabled: true
+    //         },
+    //       type: 'image'
+    //     });
+
+
 
 
 
