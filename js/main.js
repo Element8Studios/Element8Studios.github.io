@@ -124,7 +124,7 @@
             });
           },
           close: function() {
-            window.open('https://www.google.com');
+            window.open('./aurora','_self');
           }
         },
 
