@@ -298,10 +298,28 @@
 .tinted-image {
   background-image:
     linear-gradient(
-      rgba(0,10,62,.75),
-      rgba(255, 0, 0, 0.45)
+      rgba(10, 10, 10, 0.6),
+      rgba(10, 10, 10, 0.8),
+      rgba(10, 10, 10, 0.8),
+      rgba(10, 10, 10, 0.8),
+      rgba(30, 30, 30, 0.6)
     ),
-    url(../images/static.gif);
+    url('../images/static.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tinted-image-bg {
+  background-image:
+    linear-gradient(
+      rgba(50,50,50,.8),
+      rgba(20, 20, 50, 0.8)
+    ),
+    url('../images/static.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -633,6 +651,13 @@ html{
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
+}
+
+.line-1-left{
+    font-size: 36px;
+    color: rgba(255,255,255,1);
+    font-family: Montserrat-SemiBold;
+    text-align: left;
 }
 
 /* Animation */

@@ -107,7 +107,8 @@
       }
     });
 
-    // OTHER
+    /*==================================================================
+    [ magnificPopup - VIMEO ]*/
 
     $(document).ready(function() {
       $('.vimeo-video-rod').magnificPopup({
@@ -124,7 +125,7 @@
             });
           },
           close: function() {
-            window.open('./aurora','_self');
+            window.open('./briefing','_self');
           }
         },
 
@@ -138,8 +139,6 @@
         type: 'image'
       });
     });
-
-
 
     //     //MORE VIMEO VIDEO
     // $('.vimeo-video-more').magnificPopup({
@@ -157,10 +156,5 @@
     //         },
     //       type: 'image'
     //     });
-
-
-
-
-
 
 })(jQuery);
