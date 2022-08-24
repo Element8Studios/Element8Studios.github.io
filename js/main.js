@@ -157,4 +157,22 @@
     //       type: 'image'
     //     });
 
+
+    /*==================================================================
+    [ PLAY / PAUSE BUTTON ]*/
+
+    var playing = false;
+      playpause.addEventListener('click', function () {
+          if(!playing) {
+              document.getElementById('player').play();
+          }
+          else {
+              document.getElementById('player').pause();
+          }
+          playing = !playing;
+      });
+
+      /*==================================================================
+      [ OTHER ]*/
+
 })(jQuery);
