@@ -720,6 +720,35 @@ html{
   animation-delay: 3s;
 }
 
+/*/OTHER//*/
+
+.parallax-window2 .paragraph-fade {
+  animation: chainReaction 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  text-align: left;
+  font-family: Montserrat-Light;
+  font-size: 20px;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.parallax-window2 .paragraph-fade:nth-child(1) {
+  animation-delay: 1.0s;
+}
+
+.parallax-window2 .paragraph-fade:nth-child(2) {
+  animation-delay: 1.25s;
+}
+
+.parallax-window2 .paragraph-fade:nth-child(3) {
+  animation-delay: 1.5s;
+}
+
+.parallax-window2 .paragraph-fade:nth-child(4) {
+  animation-delay: 01.75s;
+}
+
 
 /*WindowOnload Fade-In*/
 
