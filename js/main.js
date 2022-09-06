@@ -82,13 +82,27 @@
 
     $(document).ready(function() {
       $('.popup-youtube').magnificPopup({
+        mainClass: 'mfp-fade youtube-popup-custom',
+        callbacks: {
+          open: function() {
+            var iframe = jQuery('.mfp-content iframe');
+            var player = new YouTube.Player(iframe);
+
+            player.on('ended', function() {
+              jQuery.magnificPopup.close();
+            });
+          },
+          close: function() {
+            window.open('./briefing','_self');
+          }
+        },
         type: 'iframe'
       });
     });
 
     $('.button').magnificPopup({
       items: {
-        src: 'https://www.youtube.com/watch?v=nperVBFxiis'
+        src: 'https://www.youtube.com/watch?v=JEWyqlRaxrw'
       },
       type: 'iframe',
       iframe: {
@@ -100,7 +114,7 @@
           youtube: {
             index: 'youtube.com/',
             id: 'v=',
-            src: '//www.youtube.com/embed/%id%?autoplay=1'
+            src: '//www.youtube.com/embed/%id%?autoplay=1?showinfo=0?controls=0'
           }
         },
         srcAction: 'iframe_src',
@@ -111,7 +125,7 @@
     [ magnificPopup - VIMEO ]*/
 
     $(document).ready(function() {
-      $('.vimeo-video-rod').magnificPopup({
+      $('.vimeo-video-welcome').magnificPopup({
         // main options
         alignTop: false,
         mainClass: 'mfp-fade vimeo-popup-custom',
@@ -130,7 +144,7 @@
         },
 
         items: [{
-          src: 'https://player.vimeo.com/video/742065435',
+          src: 'https://player.vimeo.com/video/745185074',
           type: 'iframe' // this overrides default type
         }],
         gallery: {
@@ -171,6 +185,16 @@
           }
           playing = !playing;
       });
+
+      var playing = false;
+        justpause.addEventListener('click', function () {
+            if(!playing) {
+            }
+            else {
+                document.getElementById('player').pause();
+            }
+            playing = !playing;
+        });
 
       /*==================================================================
       [ OTHER ]*/
